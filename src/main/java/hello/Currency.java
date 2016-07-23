@@ -12,9 +12,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * <simpleType name="currency">
  *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     <enumeration value="GBP"/>
+ *     <enumeration value="UAH"/>
+ *     <enumeration value="USD"/>
  *     <enumeration value="EUR"/>
- *     <enumeration value="PLN"/>
  *   </restriction>
  * </simpleType>
  * </pre>
@@ -23,9 +23,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum Currency {
 
-    GBP,
-    EUR,
-    PLN;
+    UAH,
+    USD,
+    EUR;
 
     public String value() {
         return name();
